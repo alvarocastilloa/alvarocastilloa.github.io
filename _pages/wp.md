@@ -22,16 +22,16 @@ As a research assistant I have contributed to several articles. Acknowledgements
 
 * Business Cycle Asymmetry and Input-Output Structure: The Role of Firm-to-Firm Networks (_J. Miranda-Pinto, A. Silva and E. Young_) [Journal of Monetary Economics. Volume 137, July 2023](https://cokeconphd.github.io/Website/Skewness_Network_revised_10_Feb_2023.pdf)
 
-* Productivity Growth and Workers’ Job Transitions: Evidence from Censal Microdata (_E. Albagli, M. Canales, C. Syverson, M. Tapia and J. Wlasiuk_) [The Economic Journal](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueae081/7762187)
+* Productivity Growth and Workers’ Job Transitions: Evidence from Censal Microdata (_E. Albagli, M. Canales, C. Syverson, M. Tapia and J. Wlasiuk_) [The Economic Journal, 2024](https://academic.oup.com/ej/advance-article/doi/10.1093/ej/ueae081/7762187)
 
 * Saving Constraints, Inequality, and the Credit Market Response to Fiscal Stimulus (_J. Miranda-Pinto, D. Murphy, K. Walsh,  and E. Young_) [European Economic Review. Vol. 151, January 2023](https://www.sciencedirect.com/science/article/abs/pii/S0014292122002355)
+
+* Production Network Diversification and Economic Development (_J. Miranda-Pinto, J. Gloria and D. Fleming-Muñoz_) [Journal of Economic Behavior and Organization, 2024]([https://cokeconphd.github.io/Website/Gloria_Miranda-Pinto_Fleming.pdf](https://www.sciencedirect.com/science/article/pii/S016518892400160X))
   
 * Market integration and price leadership: The U.S. Atlantic salmon market (_L. Salazar and J. Dresdner_) [Aquaculture Economics & Management, 25:3, 245-259](https://www.tandfonline.com/doi/abs/10.1080/13657305.2020.1843562)
 
 * Do Chilean imports lead prices in the EU mussel market? (_L. Salazar and J. Dresdner_) [Aquaculture Economics & Management, 27:2, 207-220](https://www.tandfonline.com/doi/full/10.1080/13657305.2022.2089771)
   
-* Production Network Diversification and Economic Development (_J. Miranda-Pinto, J. Gloria and D. Fleming-Muñoz_) [R&R Journal of Economic Behavior and Organization](https://cokeconphd.github.io/Website/Gloria_Miranda-Pinto_Fleming.pdf)
-
 * Commodity Prices and Production Networks in Small Open Economies (_Alvaro Silva, P. Caraiani, J. Miranda-Pinto and J. Olaya_) [Working paper](https://cokeconphd.github.io/Website/Commodity_networks_23_02_23.pdf)
 
 * Trade Credit and Sectoral Comovement during US Recessions (_J. Miranda-Pinto and Gang Zhang_) [Working paper](https://cokeconphd.github.io/Website/trade_credit_comov_GR.pdf)
