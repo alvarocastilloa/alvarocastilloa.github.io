@@ -83,7 +83,7 @@ author:
   name             : "Alvaro Castillo"
   avatar           : "20210331_141625.jpeg"
   bio              : "Researcher in training"
-  location         : "Santiago, Chile"
+  location         : "Minneapolis, MN"
   employer         : "Central Bank of Chile"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=_i1VEsIAAAAJ&hl=es"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "alvarocastilloa"
+  github           : # "alvarocastilloa"
   google_plus      :
   keybase          :
   instagram        :
