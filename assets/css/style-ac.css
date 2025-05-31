@@ -1,10 +1,18 @@
-/* Cambia el color de todos los enlaces */
+/* Estilo para todos los enlaces */
 a {
-  color: rgb(82, 0, 0) !important;
+  color: rgb(82, 0, 0);
   text-decoration: none;
 }
 
-/* Cambia el color al pasar el mouse */
-a:hover {
-  color: rgb(110, 0, 0) !important;
+/* Estilo para enlaces con clases específicas */
+a.text-info,
+a.text-primary {
+  color: rgb(82, 0, 0);
+}
+
+/* Estilo para el estado hover */
+a:hover,
+a.text-info:hover,
+a.text-primary:hover {
+  color: rgb(110, 0, 0);
 }
