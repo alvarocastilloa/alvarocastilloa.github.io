@@ -1,18 +1,9 @@
-/* Estilo para todos los enlaces */
-a {
-  color: rgb(82, 0, 0);
-  text-decoration: none;
-}
-
-/* Estilo para enlaces con clases específicas */
 a.text-info,
 a.text-primary {
-  color: rgb(82, 0, 0);
+  color: rgb(82, 0, 0) !important;
 }
 
-/* Estilo para el estado hover */
-a:hover,
 a.text-info:hover,
 a.text-primary:hover {
-  color: rgb(110, 0, 0);
+  color: rgb(110, 0, 0) !important;
 }
