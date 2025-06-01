@@ -7,3 +7,16 @@ a.text-info:hover,
 a.text-primary:hover {
   color: rgb(110, 0, 0) !important;
 }
+
+.custom-cv-btn {
+  background-color: rgb(82, 0, 0) !important;
+  border-color: rgb(82, 0, 0) !important;
+  color: white !important;
+  transition: background-color 0.3s ease;
+}
+
+.custom-cv-btn:hover {
+  background-color: rgb(110, 0, 0) !important;
+  border-color: rgb(110, 0, 0) !important;
+  color: white !important;
+}
