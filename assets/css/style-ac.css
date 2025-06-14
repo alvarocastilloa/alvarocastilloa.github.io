@@ -96,6 +96,10 @@ body.dark-mode {
   overflow-x: hidden;
 }
 
+
+/* Force dark background on html and nav wrappers */
+
+body.dark-mode,
 body.dark-mode html,
 body.dark-mode body,
 body.dark-mode section,
@@ -104,7 +108,12 @@ body.dark-mode .container-fluid,
 body.dark-mode .row,
 body.dark-mode .text-wrapper,
 body.dark-mode .image-wrapper,
-body.dark-mode .card {
+body.dark-mode .card,
+body.dark-mode .menu,
+body.dark-mode .menu1,
+body.dark-mode .navbar-dropdown,
+body.dark-mode .navbar,
+body.dark-mode .navbar-fixed-top {
   background-color: #1a1a1a !important;
   color: #d6d6d6 !important;
   border: none !important;
