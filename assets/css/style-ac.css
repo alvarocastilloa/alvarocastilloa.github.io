@@ -23,22 +23,20 @@ a.text-primary:hover {
 
 /* DARK MODE STYLES */
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
 }
 
+/* Optional: make links lighter */
 body.dark-mode a {
-  color: #bb86fc;
+  color: #90caf9 !important;
 }
 
-body.dark-mode .custom-cv-btn {
-  background-color: #bb86fc !important;
-  border-color: #bb86fc !important;
-  color: black !important;
-}
-
-body.dark-mode .custom-cv-btn:hover {
-  background-color: #9e6cff !important;
-  border-color: #9e6cff !important;
-  color: black !important;
+/* Optional: override light background sections */
+body.dark-mode .container,
+body.dark-mode .text-wrapper,
+body.dark-mode .navbar,
+body.dark-mode .mbr-section {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
 }
