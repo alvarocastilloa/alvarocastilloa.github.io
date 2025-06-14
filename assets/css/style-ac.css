@@ -22,21 +22,61 @@ a.text-primary:hover {
 }
 
 /* DARK MODE STYLES */
+
+/* Base dark mode */
 body.dark-mode {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
+  background-color: #1a1a1a !important;
+  color: #d6d6d6 !important;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
-/* Optional: make links lighter */
-body.dark-mode a {
-  color: #90caf9 !important;
-}
-
-/* Optional: override light background sections */
+/* Section backgrounds */
+body.dark-mode section,
 body.dark-mode .container,
-body.dark-mode .text-wrapper,
-body.dark-mode .navbar,
-body.dark-mode .mbr-section {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
+body.dark-mode .mbr-section,
+body.dark-mode .row {
+  background-color: #1a1a1a !important;
+  color: #d6d6d6 !important;
+}
+
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #ffffff !important;
+}
+
+/* Text and paragraphs */
+body.dark-mode p,
+body.dark-mode .mbr-text,
+body.dark-mode .mbr-fonts-style {
+  color: #d6d6d6 !important;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #a6c1ee !important;
+  text-decoration: none;
+}
+body.dark-mode a:hover {
+  color: #e0b0ff !important;
+  text-decoration: underline;
+}
+
+/* Button override */
+body.dark-mode .custom-cv-btn {
+  background-color: #7f5af0 !important;
+  border-color: #7f5af0 !important;
+  color: black !important;
+}
+body.dark-mode .custom-cv-btn:hover {
+  background-color: #9c79f9 !important;
+  border-color: #9c79f9 !important;
+}
+
+/* Optional: remove box/border */
+body.dark-mode .container {
+  border: none !important;
+  box-shadow: none !important;
 }
