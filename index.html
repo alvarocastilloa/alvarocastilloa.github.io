@@ -66,8 +66,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right navbar-nav-top-padding" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">HOME</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="research-ac.html">RESEARCH</a></li>
                     <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="about.html">ABOUT ME</a>
-                    </li></ul>
-                
+                    </li>
+                </ul>
+                  <!-- Dark Mode Toggle Button -->
+            <button onclick="toggleDarkMode()" class="btn custom-cv-btn ml-3 mt-2">
+              Toggle Dark Mode
+            </button>
+
                 
             </div>
         </div>
@@ -235,5 +240,20 @@
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  </body>
+
+  
+  <script>
+  // Activate dark mode if it was set before
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  }
+</script>
+  
+
+</body>
 </html>
