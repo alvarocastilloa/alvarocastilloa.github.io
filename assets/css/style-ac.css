@@ -104,14 +104,24 @@ body.dark-mode .card {
   box-shadow: none !important;
 }
 
-/* Navbar (dark mode updated) */
+/* Navbar (dark mode — FULL fix) */
 body.dark-mode .menu,
 body.dark-mode .menu1,
 body.dark-mode .navbar-dropdown,
 body.dark-mode .navbar,
-body.dark-mode .navbar-fixed-top {
+body.dark-mode .navbar-fixed-top,
+body.dark-mode .navbar-collapse,
+body.dark-mode .navbar-toggler,
+body.dark-mode .nav-overlay,
+body.dark-mode .navbar-container,
+body.dark-mode .navbar-wrapper,
+body.dark-mode header,
+body.dark-mode section.menu,
+body.dark-mode .navbar-dropdown .dropdown-menu {
   background-color: #323533 !important;
   color: #d6d6d6 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 body.dark-mode .navbar a,
