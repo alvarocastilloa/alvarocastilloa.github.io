@@ -3,41 +3,55 @@
 <html  >
 <head>
 
-  <style>
-    html.dark-mode,
-    body.dark-mode {
-      background-color: #2a2c2e;
-      color: #d6d6d6;
-    }
-  </style>
-  
-  <script>
-    // Apply dark mode immediately (before paint)
-    if (localStorage.getItem('dark-mode') === 'true') {
-      document.documentElement.classList.add('dark-mode');
-    }
-  </script>
-  
-  <meta name="google-site-verification" content="YLftxWVK1S_-Jgg7yddm9wm6vVeXtqE3oTDPU8NKqCo" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/newimages/icon-a.png" type="image/x-icon">
-  <meta name="description" content="">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN3PFDHBKG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-QN3PFDHBKG');
-  </script>
+<!-- 1. Disable transitions during preload -->
+<style>
+  html.preload *, html.leaving * {
+    transition: none !important;
+  }
+  html.dark-mode, html.dark-mode *, body.dark-mode {
+    background-color: #2a2c2e !important;
+    color: #d6d6d6 !important;
+  }
+</style>
 
-  
-  <title>Research</title>
+<!-- 2. Set dark mode before painting -->
+<script>
+  document.documentElement.classList.add('preload');
+  if (localStorage.getItem('dark-mode') === 'true') {
+    document.documentElement.classList.add('dark-mode', 'leaving');
+  }
+  window.addEventListener('load', () => {
+    document.documentElement.classList.remove('preload', 'leaving');
+  });
+</script>
+
+<!-- 3. Conditionally load Mobirise theme script -->
+<script>
+  if (localStorage.getItem('dark-mode') !== 'true') {
+    document.write('<script src="assets/theme/js/script.js"><\\/script>');
+  }
+</script>
+
+<!-- 4. Google Site Verification + Metadata -->
+<meta name="google-site-verification" content="YLftxWVK1S_-Jgg7yddm9wm6vVeXtqE3oTDPU8NKqCo" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="assets/newimages/icon-a.png" type="image/x-icon">
+<title>Research</title>
+
+
+<!-- 5. Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN3PFDHBKG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QN3PFDHBKG');
+</script>
+
+<!-- 6. CSS Stylesheets -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
