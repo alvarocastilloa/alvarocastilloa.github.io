@@ -20,3 +20,25 @@ a.text-primary:hover {
   border-color: rgb(110, 0, 0) !important;
   color: white !important;
 }
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .custom-cv-btn {
+  background-color: #bb86fc !important;
+  border-color: #bb86fc !important;
+  color: black !important;
+}
+
+body.dark-mode .custom-cv-btn:hover {
+  background-color: #9e6cff !important;
+  border-color: #9e6cff !important;
+  color: black !important;
+}
