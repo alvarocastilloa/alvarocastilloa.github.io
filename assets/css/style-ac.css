@@ -1,5 +1,37 @@
 /* ========== LIGHT MODE STYLES ========== */
 
+/* Page background and text */
+body,
+html {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
+
+/* Section backgrounds */
+section,
+.mbr-section,
+.container,
+.container-fluid,
+.row,
+.text-wrapper,
+.image-wrapper,
+.card {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #111111 !important;
+}
+
+/* Paragraphs and fonts */
+p,
+.mbr-text,
+.mbr-fonts-style {
+  color: #222222 !important;
+}
+
 /* Default link colors */
 a.text-info,
 a.text-primary {
@@ -30,18 +62,18 @@ a.text-primary:hover {
 .navbar-fixed-top,
 .menu,
 .menu1 {
-  background-color: #000000 !important;
-  color: white !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .navbar a,
 .navbar .nav-link {
-  color: white !important;
+  color: #000000 !important;
 }
 
 .navbar a:hover,
 .navbar .nav-link:hover {
-  color: #dddddd !important;
+  color: #444444 !important;
 }
 
 
@@ -65,16 +97,31 @@ body.dark-mode .container-fluid,
 body.dark-mode .row,
 body.dark-mode .text-wrapper,
 body.dark-mode .image-wrapper,
-body.dark-mode .card,
+body.dark-mode .card {
+  background-color: #1a1a1a !important;
+  color: #d6d6d6 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Navbar (dark mode updated) */
 body.dark-mode .menu,
 body.dark-mode .menu1,
 body.dark-mode .navbar-dropdown,
 body.dark-mode .navbar,
 body.dark-mode .navbar-fixed-top {
-  background-color: #1a1a1a !important;
+  background-color: #323533 !important;
   color: #d6d6d6 !important;
-  border: none !important;
-  box-shadow: none !important;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .nav-link {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .navbar a:hover,
+body.dark-mode .nav-link:hover {
+  color: #ffffff !important;
 }
 
 /* Headings */
