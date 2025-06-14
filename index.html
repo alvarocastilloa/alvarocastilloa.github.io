@@ -3,35 +3,6 @@
 
 <head>
 
-<!-- 1. Disable transitions during preload -->
-<style>
-  html.preload *, html.leaving * {
-    transition: none !important;
-  }
-  html.dark-mode, html.dark-mode *, body.dark-mode {
-    background-color: #2a2c2e !important;
-    color: #d6d6d6 !important;
-  }
-</style>
-
-<!-- 2. Set dark mode before painting -->
-<script>
-  document.documentElement.classList.add('preload');
-  if (localStorage.getItem('dark-mode') === 'true') {
-    document.documentElement.classList.add('dark-mode', 'leaving');
-  }
-  window.addEventListener('load', () => {
-    document.documentElement.classList.remove('preload', 'leaving');
-  });
-</script>
-
-<!-- 3. Conditionally load Mobirise theme script -->
-<script>
-  if (localStorage.getItem('dark-mode') !== 'true') {
-    document.write('<script src="assets/theme/js/script.js"><\\/script>');
-  }
-</script>
-
 <!-- 4. Google Site Verification + Metadata -->
 <meta name="google-site-verification" content="YLftxWVK1S_-Jgg7yddm9wm6vVeXtqE3oTDPU8NKqCo" />
 <meta charset="UTF-8">
@@ -96,12 +67,6 @@
                     <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="about.html">ABOUT ME</a>
                     </li>
                 </ul>
-                  <!-- Dark Mode Toggle Button -->
-                <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn" style="font-size: 1.2rem; background: none; border: none;">
-                  <span id="modeIcon">◑</span>
-                </button>
-
-
                  
             </div>
         </div>
@@ -269,27 +234,6 @@
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-
- <script>
-  const icon = document.getElementById('modeIcon');
-  const savedMode = localStorage.getItem('dark-mode');
-
-  // Apply saved dark mode on page load
-  if (savedMode === 'true') {
-    document.body.classList.add('dark-mode');
-    icon.textContent = '◐'; // icon for dark mode
-  }
-
-  // Toggle function
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    icon.textContent = isDark ? '◐' : '◑';
-    localStorage.setItem('dark-mode', isDark);
-  }
-</script>
-
-
 
 </body>
 </html>
