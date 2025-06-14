@@ -2,7 +2,6 @@
 <html  >
 <head>
 
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN3PFDHBKG"></script>
   <script>
@@ -121,22 +120,25 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
   
- <script>
+<script>
   const icon = document.getElementById('modeIcon');
   const savedMode = localStorage.getItem('dark-mode');
 
+  // Apply saved dark mode on page load
   if (savedMode === 'true') {
     document.body.classList.add('dark-mode');
-    icon.textContent = '◐'; // light icon for dark mode
+    icon.textContent = '◐'; // icon for dark mode
   }
 
+  // Toggle function
   function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
     icon.textContent = isDark ? '◐' : '◑';
     localStorage.setItem('dark-mode', isDark);
   }
-  </script>
+</script>
+
 
 
 </body>
