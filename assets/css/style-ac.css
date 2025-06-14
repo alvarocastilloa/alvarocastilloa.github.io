@@ -182,7 +182,7 @@ body.dark-mode .navbar-collapse,
 body.dark-mode .navbar-toggler,
 body.dark-mode .nav-overlay,
 body.dark-mode .navbar-dropdown .dropdown-menu {
-  background-color: #323533 !important;
+  background-color: #2a2c2e !important;
   border: none !important;
   box-shadow: none !important;
 }
