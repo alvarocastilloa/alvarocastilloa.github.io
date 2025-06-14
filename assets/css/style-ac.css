@@ -28,6 +28,7 @@ body.dark-mode {
   background-color: #1a1a1a !important;
   color: #d6d6d6 !important;
   font-family: Georgia, 'Times New Roman', serif;
+  overflow-x: hidden;
 }
 
 /* Section backgrounds */
@@ -37,6 +38,8 @@ body.dark-mode .mbr-section,
 body.dark-mode .row {
   background-color: #1a1a1a !important;
   color: #d6d6d6 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Headings */
@@ -64,24 +67,29 @@ body.dark-mode a:hover {
   text-decoration: underline;
 }
 
-/* Button override */
-body.dark-mode .custom-cv-btn {
-  background-color: #7f5af0 !important;
-  border-color: #7f5af0 !important;
-  color: black !important;
-}
-body.dark-mode .custom-cv-btn:hover {
-  background-color: #9c79f9 !important;
-  border-color: #9c79f9 !important;
-}
-
-/* Optional: remove box/border */
-body.dark-mode .container {
+/* Elegant dark mode toggle button (icon only) */
+#modeToggleBtn {
+  background-color: transparent !important;
   border: none !important;
+  box-shadow: none !important;
+  color: #e0e0e0 !important;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.3s ease;
+}
+#modeToggleBtn:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+#modeToggleBtn:focus,
+#modeToggleBtn:active {
+  outline: none !important;
   box-shadow: none !important;
 }
 
+/* Smooth transition */
 body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 
