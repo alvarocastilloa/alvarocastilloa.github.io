@@ -92,4 +92,23 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
+body.dark-mode {
+  overflow-x: hidden;
+}
+
+body.dark-mode html,
+body.dark-mode body,
+body.dark-mode section,
+body.dark-mode .mbr-section,
+body.dark-mode .container-fluid,
+body.dark-mode .row,
+body.dark-mode .text-wrapper,
+body.dark-mode .image-wrapper,
+body.dark-mode .card {
+  background-color: #1a1a1a !important;
+  color: #d6d6d6 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 
