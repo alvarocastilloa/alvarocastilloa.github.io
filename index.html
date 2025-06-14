@@ -70,9 +70,10 @@
                     </li>
                 </ul>
                   <!-- Dark Mode Toggle Button -->
-              <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn" style="background: none; border: none; padding: 0;">
-                <img id="modeIcon" src="assets/images/moon.webp" alt="Toggle theme" style="height: 24px; width: 24px;">
-              </button>
+                <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn" style="font-size: 1.2rem; background: none; border: none;">
+                  <span id="modeIcon">◑</span>
+                </button>
+
 
                  
             </div>
@@ -243,21 +244,22 @@
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
   <script>
-    const icon = document.getElementById('modeIcon');
-    const savedMode = localStorage.getItem('dark-mode');
-  
-    if (savedMode === 'true') {
-      document.body.classList.add('dark-mode');
-      icon.src = 'assets/images/sun.webp'; // Set initial icon for dark mode
-    }
-  
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      icon.src = isDark ? 'assets/images/sun.webp' : 'assets/images/moon.webp';
-      localStorage.setItem('dark-mode', isDark);
-    }
+  const icon = document.getElementById('modeIcon');
+  const savedMode = localStorage.getItem('dark-mode');
+
+  if (savedMode === 'true') {
+    document.body.classList.add('dark-mode');
+    icon.textContent = '◐'; // light icon for dark mode
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    icon.textContent = isDark ? '◐' : '◑';
+    localStorage.setItem('dark-mode', isDark);
+  }
   </script>
+
 
 
 </body>
