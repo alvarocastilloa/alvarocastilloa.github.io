@@ -80,7 +80,7 @@ a.text-primary:hover {
 /* ========== DARK MODE STYLES ========== */
 
 body.dark-mode {
-  background-color: #1a1a1a !important;
+  background-color: #2a2c2e !important;
   color: #d6d6d6 !important;
   font-family: Georgia, 'Times New Roman', serif;
   overflow-x: hidden;
@@ -98,7 +98,7 @@ body.dark-mode .row,
 body.dark-mode .text-wrapper,
 body.dark-mode .image-wrapper,
 body.dark-mode .card {
-  background-color: #1a1a1a !important;
+  background-color: #2a2c2e !important;
   color: #d6d6d6 !important;
   border: none !important;
   box-shadow: none !important;
