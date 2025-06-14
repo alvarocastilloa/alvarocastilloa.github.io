@@ -1,3 +1,4 @@
+/* Default link styles */
 a.text-info,
 a.text-primary {
   color: rgb(82, 0, 0) !important;
@@ -8,6 +9,7 @@ a.text-primary:hover {
   color: rgb(110, 0, 0) !important;
 }
 
+/* CV button (light mode) */
 .custom-cv-btn {
   background-color: rgb(82, 0, 0) !important;
   border-color: rgb(82, 0, 0) !important;
@@ -22,8 +24,6 @@ a.text-primary:hover {
 }
 
 /* DARK MODE STYLES */
-
-/* Base dark mode */
 body.dark-mode {
   background-color: #1a1a1a !important;
   color: #d6d6d6 !important;
@@ -31,83 +31,13 @@ body.dark-mode {
   overflow-x: hidden;
 }
 
-/* Section backgrounds */
-body.dark-mode section,
-body.dark-mode .container,
-body.dark-mode .mbr-section,
-body.dark-mode .row {
-  background-color: #1a1a1a !important;
-  color: #d6d6d6 !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Headings */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4 {
-  color: #ffffff !important;
-}
-
-/* Text and paragraphs */
-body.dark-mode p,
-body.dark-mode .mbr-text,
-body.dark-mode .mbr-fonts-style {
-  color: #d6d6d6 !important;
-}
-
-/* Links */
-body.dark-mode a {
-  color: #a6c1ee !important;
-  text-decoration: none;
-}
-body.dark-mode a:hover {
-  color: #e0b0ff !important;
-  text-decoration: underline;
-}
-
-/* Elegant dark mode toggle button (icon only) */
-#modeToggleBtn {
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: #e0e0e0 !important;
-  font-size: 1.3rem;
-  padding: 0.3rem 0.6rem;
-  transition: background-color 0.3s ease;
-}
-#modeToggleBtn:hover {
-  background-color: #333333 !important;
-  color: #ffffff !important;
-}
-#modeToggleBtn:focus,
-#modeToggleBtn:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* Smooth transition */
-body {
-  transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-body.dark-mode {
-  overflow-x: hidden;
-}
-
-/* Dark mode hamburger menu lines */
-body.dark-mode .navbar-toggler .hamburger span {
-  background-color: #d6d6d6 !important;
-}
-
-/* Force dark background on html and nav wrappers */
-
+/* Containers and layout */
 body.dark-mode,
 body.dark-mode html,
 body.dark-mode body,
 body.dark-mode section,
 body.dark-mode .mbr-section,
+body.dark-mode .container,
 body.dark-mode .container-fluid,
 body.dark-mode .row,
 body.dark-mode .text-wrapper,
@@ -124,13 +54,62 @@ body.dark-mode .navbar-fixed-top {
   box-shadow: none !important;
 }
 
-#modeIcon {
-  filter: drop-shadow(0 0 1px #00000060);
-  transition: transform 0.2s ease;
-}
-#modeToggleBtn:hover #modeIcon {
-  transform: rotate(15deg);
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #ffffff !important;
 }
 
+/* Text */
+body.dark-mode p,
+body.dark-mode .mbr-text,
+body.dark-mode .mbr-fonts-style {
+  color: #d6d6d6 !important;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #a6c1ee !important;
+  text-decoration: none;
+}
+body.dark-mode a:hover {
+  color: #e0b0ff !important;
+  text-decoration: underline;
+}
+
+/* Hamburger icon */
+body.dark-mode .navbar-toggler .hamburger span {
+  background-color: #d6d6d6 !important;
+}
+
+/* Dark mode toggle button */
+#modeToggleBtn {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #e0e0e0 !important;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#modeToggleBtn:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  transform: scale(1.15);
+}
+
+#modeToggleBtn:focus,
+#modeToggleBtn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Smooth transition for theme changes */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 
 
