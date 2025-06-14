@@ -215,8 +215,13 @@ body.dark-mode .navbar-dropdown .dropdown-menu {
 
 /* ========== GENERAL TRANSITIONS ========== */
 
-body {
+body,
+html,
+.navbar,
+.container,
+section,
+.mbr-section,
+.row,
+.card {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
-
-
