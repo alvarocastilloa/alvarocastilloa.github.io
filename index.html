@@ -70,10 +70,11 @@
                     </li>
                 </ul>
                   <!-- Dark Mode Toggle Button -->
-            <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn custom-cv-btn ml-3 mt-2" style="font-size: 1.2rem;">
-              <span id="modeIcon">☾</span>
-            </button>
-                
+              <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn" style="background: none; border: none; padding: 0;">
+                <img id="modeIcon" src="assets/images/moon.webp" alt="Toggle theme" style="height: 24px; width: 24px;">
+              </button>
+
+                 
             </div>
         </div>
     </nav>
@@ -242,21 +243,22 @@
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
   <script>
-    // Set icon based on saved preference
     const icon = document.getElementById('modeIcon');
     const savedMode = localStorage.getItem('dark-mode');
+  
     if (savedMode === 'true') {
       document.body.classList.add('dark-mode');
-      icon.textContent = '☀'; // light mode icon
+      icon.src = 'assets/images/sun.webp'; // Set initial icon for dark mode
     }
   
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       const isDark = document.body.classList.contains('dark-mode');
+      icon.src = isDark ? 'assets/images/sun.webp' : 'assets/images/moon.webp';
       localStorage.setItem('dark-mode', isDark);
-      icon.textContent = isDark ? '☀' : '☾'; // toggle icon
     }
   </script>
+
 
 </body>
 </html>
