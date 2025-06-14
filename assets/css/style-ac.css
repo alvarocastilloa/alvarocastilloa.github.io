@@ -167,6 +167,16 @@ body.dark-mode .navbar-toggler .hamburger span {
   background-color: #d6d6d6 !important;
 }
 
+/* Fix dark mode mobile nav toggle background */
+body.dark-mode .navbar-collapse,
+body.dark-mode .navbar-toggler,
+body.dark-mode .nav-overlay,
+body.dark-mode .navbar-dropdown .dropdown-menu {
+  background-color: #323533 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 
 /* ========== DARK MODE TOGGLE BUTTON ========== */
 
