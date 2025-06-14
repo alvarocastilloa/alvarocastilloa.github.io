@@ -3,7 +3,20 @@
 <html  >
 <head>
 
-
+  <style>
+    html.dark-mode,
+    body.dark-mode {
+      background-color: #2a2c2e;
+      color: #d6d6d6;
+    }
+  </style>
+  
+  <script>
+    // Apply dark mode immediately (before paint)
+    if (localStorage.getItem('dark-mode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  </script>
   
   <meta name="google-site-verification" content="YLftxWVK1S_-Jgg7yddm9wm6vVeXtqE3oTDPU8NKqCo" />
   <meta charset="UTF-8">
