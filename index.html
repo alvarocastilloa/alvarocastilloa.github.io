@@ -70,10 +70,9 @@
                     </li>
                 </ul>
                   <!-- Dark Mode Toggle Button -->
-            <button onclick="toggleDarkMode()" class="btn custom-cv-btn ml-3 mt-2">
-              Toggle Dark Mode
+            <button onclick="toggleDarkMode()" id="modeToggleBtn" class="btn custom-cv-btn ml-3 mt-2" style="font-size: 1.2rem;">
+              <span id="modeIcon">☾</span>
             </button>
-
                 
             </div>
         </div>
@@ -242,19 +241,22 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 
-  
   <script>
-  // Activate dark mode if it was set before
-  if (localStorage.getItem('dark-mode') === 'true') {
-    document.body.classList.add('dark-mode');
-  }
-
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
-  }
-</script>
+    // Set icon based on saved preference
+    const icon = document.getElementById('modeIcon');
+    const savedMode = localStorage.getItem('dark-mode');
+    if (savedMode === 'true') {
+      document.body.classList.add('dark-mode');
+      icon.textContent = '☀'; // light mode icon
+    }
   
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('dark-mode', isDark);
+      icon.textContent = isDark ? '☀' : '☾'; // toggle icon
+    }
+  </script>
 
 </body>
 </html>
