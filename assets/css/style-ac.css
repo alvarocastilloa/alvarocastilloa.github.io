@@ -124,4 +124,13 @@ body.dark-mode .navbar-fixed-top {
   box-shadow: none !important;
 }
 
+#modeIcon {
+  filter: drop-shadow(0 0 1px #00000060);
+  transition: transform 0.2s ease;
+}
+#modeToggleBtn:hover #modeIcon {
+  transform: rotate(15deg);
+}
+
+
 
