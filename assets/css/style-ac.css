@@ -96,6 +96,10 @@ body.dark-mode {
   overflow-x: hidden;
 }
 
+/* Dark mode hamburger menu lines */
+body.dark-mode .navbar-toggler .hamburger span {
+  background-color: #d6d6d6 !important;
+}
 
 /* Force dark background on html and nav wrappers */
 
