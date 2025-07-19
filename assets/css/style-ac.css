@@ -23,7 +23,7 @@ a.text-primary:hover {
 
 /* Remove space between navbar and intro section */
 #content10-4e {
-  padding-top: 0rem !important;
+  padding-top: 1rem !important;
   margin-top: 0 !important;
 }
 
