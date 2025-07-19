@@ -21,6 +21,17 @@ a.text-primary:hover {
   color: white !important;
 }
 
+/* Remove space between navbar and intro section */
+#content10-4e {
+  padding-top: 1rem !important;
+  margin-top: 0 !important;
+}
+
+#content10-4e .mbr-section-title {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 
 
 
