@@ -32,6 +32,11 @@ a.text-primary:hover {
   padding-top: 0 !important;
 }
 
+/* Reduce space before pictures */
+#slider4-4c {
+  padding-top: 0.5rem !important;
+  margin-top: 0rem !important;
+}
 
 
 
