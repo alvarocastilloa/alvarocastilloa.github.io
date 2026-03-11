@@ -31,12 +31,3 @@ a.text-primary:hover {
   margin-top: 0rem !important;
   padding-top: 0rem !important;
 }
-
-/* Claude-style warm background */
-html, body {
-  background-color: #f0ede6 !important;
-}
-
-section, .mbr-section, .container-fluid, .container {
-  background-color: #f0ede6 !important;
-}
