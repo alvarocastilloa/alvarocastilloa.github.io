@@ -2,39 +2,41 @@ a.text-info,
 a.text-primary {
   color: rgb(82, 0, 0) !important;
 }
-
 a.text-info:hover,
 a.text-primary:hover {
   color: rgb(110, 0, 0) !important;
 }
-
 .custom-cv-btn {
   background-color: rgb(82, 0, 0) !important;
   border-color: rgb(82, 0, 0) !important;
   color: white !important;
   transition: background-color 0.3s ease;
 }
-
 .custom-cv-btn:hover {
   background-color: rgb(110, 0, 0) !important;
   border-color: rgb(110, 0, 0) !important;
   color: white !important;
 }
-
 /* Remove space between navbar and intro section */
 #content10-4e {
   padding-top: 1rem !important;
   margin-top: 0 !important;
 }
-
 #content10-4e .mbr-section-title {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
-
 /* Reduce space before pictures */
 #slider4-4c {
   margin-top: 0rem !important;
   padding-top: 0rem !important;
 }
 
+/* Claude-style warm background */
+html, body {
+  background-color: #f0ede6 !important;
+}
+
+section, .mbr-section, .container-fluid, .container {
+  background-color: #f0ede6 !important;
+}
